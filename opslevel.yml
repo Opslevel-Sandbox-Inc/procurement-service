@@ -1,0 +1,56 @@
+---
+version: 1
+service:
+  name: Procurement Service
+  lifecycle: beta
+  tier: tier_4
+  product: Procurement
+  owner: inventory_team
+  system: orders
+  language: Ruby
+  framework: Rails
+  description: Manages inventory levels and procures for new inventory from vendors
+    when levels are low.
+  aliases:
+  tags:
+  - key: pd_id
+    value: P8Q4TXQ
+  repositories:
+  - name: OpsLevel-sales-demo/procurement-service
+    path: "/"
+    provider: github
+  tools:
+  - name: Kubernetes
+    category: orchestrator
+    url: https://deploy.bigriver.com/procurement
+    environment:
+  - name: Sentry
+    category: errors
+    url: https://bigriver.sentry.com/procurement_service
+    environment:
+  - name: Pingdom
+    category: health_checks
+    url: https://bigriver.pingdom.com/procurement
+    environment:
+  - name: Splunk
+    category: logs
+    url: https://logs.bigriver.com/procurement_service
+    environment:
+  - name: GitHub
+    category: code
+    url: https://github.com/OL-Demo/example-procurement
+    environment:
+  - name: LaunchDarkly
+    category: feature_flag
+    url: https://launchdarkly.com/foo
+    environment:
+  dependencies:
+  alert_sources:
+  - type: pagerduty
+    external_id: P8Q4TXQ
+  properties:
+    code_freeze_date:
+    container_image:
+    dast_findings:
+    risk_assessment:
+    vpc_enabled:
