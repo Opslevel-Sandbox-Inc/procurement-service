@@ -47,8 +47,6 @@ service:
   dependencies:
   - alias: inventory_tracker
   alert_sources:
-  - type: pagerduty
-    external_id: P8Q4TXQ
   properties:
     code_freeze_date:
     container_image:
