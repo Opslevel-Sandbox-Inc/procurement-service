@@ -16,7 +16,7 @@ service:
   - key: pd_id
     value: P8Q4TXQ
   repositories:
-  - name: OpsLevel-sales-demo/procurement-service
+  - name: MurielGordon/procurement-service
     path: "/"
     provider: github
   tools:
