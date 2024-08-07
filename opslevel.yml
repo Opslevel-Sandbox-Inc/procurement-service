@@ -48,8 +48,3 @@ service:
   - alias: inventory_tracker
   alert_sources:
   properties:
-    code_freeze_date:
-    container_image:
-    dast_findings:
-    risk_assessment:
-    vpc_enabled:
