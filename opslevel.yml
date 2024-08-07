@@ -16,9 +16,10 @@ service:
   - key: pd_id
     value: P8Q4TXQ
   repositories:
-  - name: MurielGordon/procurement-service
+  - name: Opslevel-Sandbox-Inc/procurement-service
     path: "/"
     provider: github
+    display_name: procurement-service
   tools:
   - name: Kubernetes
     category: orchestrator
